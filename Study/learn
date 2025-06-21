@@ -1,0 +1,20 @@
+let protein = ['chicken', 'pork', 'tofu', 'beef', 'fish', 'beans'];
+let grain = ['rice', 'pasta', 'corn', 'potato', 'quinoa', 'crackers'];
+let vegetable = ['peas', 'green beans', 'kale', 'edamame', 'broccoli', 'asparagus'];
+let beverage = ['juice', 'milk', 'water', 'soy milk', 'soda', 'tea'];
+let dessert = ['apple', 'banana', 'more kale', 'ice cream', 'chocolate', 'kiwi'];
+
+let pantry = [protein, grain, vegetable, beverage, dessert];
+
+let numMeals = 6; 
+let meals = [];
+
+for (let i = 0; i < numMeals; i++) {
+  let meal = [];
+  for (let j = 0; j < pantry.length; j++) {
+    meal.push(pantry[j][i]);
+  }
+  meals.push(meal);
+}
+
+console.log(meals);
